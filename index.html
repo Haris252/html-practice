@@ -16,6 +16,31 @@
 
   </head>
   <style>
+    .confetti {
+        position: fixed;
+        width: 10px;
+        height: 10px;
+        background-color: #ffcc00;
+        animation: fall 3s infinite;
+        border-radius: 50%;
+    }
+
+    @keyframes fall {
+        0% { transform: translateY(0) rotate(0); opacity: 1; }
+        100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+    }
+
+    .confetti:nth-child(odd) {
+        animation-duration: 4s;
+    }
+</style>
+
+<div class="confetti" style="left: 10%;"></div>
+<div class="confetti" style="left: 30%; background-color: #ff007f;"></div>
+<div class="confetti" style="left: 50%; background-color: #00ccff;"></div>
+<div class="confetti" style="left: 70%; background-color: #ff4500;"></div>
+<div class="confetti" style="left: 90%; background-color: #7fff00;"></div>
+  <style>
     body {
         background-image: url('https://th.bing.com/th/id/OIP.rZIZwYf_vmnW7X-VZ1Z9RQHaE8?rs=1&pid=ImgDetMain');
         background-size: cover;
